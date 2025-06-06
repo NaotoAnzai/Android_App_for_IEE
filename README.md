@@ -1,36 +1,53 @@
-# Android App Developement Experiment for IEE
+# Android Native + Unity Library 開発プロジェクト
 
-## 📱 プロジェクト概要
-このプロジェクトは Unity を使用して開発された Android アプリケーションです。  
-チームでの共同開発を目的としています。
+## 🎯 開発方針
 
----
-
-## 🛠 必要なソフトウェアのインストール手順
-
-### 1. Unity Hub のインストール
-Unity の管理には Unity Hub を使用します。
-
-- Unity Hub を以下のリンクからダウンロードしてください：  
-  👉 https://unity.com/download
-
-### 2. プロジェクトに対応する Unity バージョンのインストール
-- **使用バージョン：Unity 202X.X.XfX**（※開発で使用しているUnityの正確なバージョンを記載）
-- Unity Hub を起動し、「Installs」タブから対応バージョンを追加してください。
-- インストール時、以下のモジュールも **必ず選択** してください：
-  - Android Build Support
-    - Android SDK & NDK Tools
-    - OpenJDK
-
-### 3. Git のインストール（未インストールの場合）
-- Git を以下からインストール：https://git-scm.com/
+本プロジェクトでは、**Android Studio をメイン開発環境**とし、**Unity を Android ライブラリ（.aar）として組み込む**形式で開発を行います。  
+ネイティブコード（Java/Kotlin）を中心に開発し、Unity は 3D/AR/VR コンテンツなどの描画部分で使用します。
 
 ---
 
-## 📂 プロジェクトのクローン
+## 🧰 開発に必要なもの
 
-以下の手順でローカル環境にプロジェクトを取得します：
+- Android Studio（Electric Eel 以上推奨）
+- Unity Hub
+- Unity（例: 2022.3.Xf1）  
+  インストール時は必ず「Android Build Support」＋「Android SDK & NDK Tools」「OpenJDK」を含めてください。
+- Git
 
-```bash
-git clone https://github.com/ユーザー名/リポジトリ名.git
-cd リポジトリ名
+---
+
+## 📦 セットアップ手順
+
+### ✅ Android Studio プロジェクトを準備
+
+1. Android Studio で新規プロジェクトを作成（例: Empty Activity）
+2. `app/libs/` ディレクトリを作成（Unity の .aar ファイルをここに入れます）
+
+---
+
+### ✅ Unity ライブラリを作成する方法
+
+1. Unity Hub で新規プロジェクト作成（テンプレート：2D or 3D）
+2. プロジェクトを開く
+3. `File > Build Settings` を開き、`Platform` を Android に切り替える
+4. `Export as Android Library (.aar)` にチェックし、`Build` を押す
+5. `Temp/gradleOut/unityLibrary.aar` が出力される
+
+---
+
+### ✅ Android Studio に組み込む
+
+1. `app/libs/unityLibrary.aar` をコピー
+2. `build.gradle` に以下を追加：
+
+```gradle
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+dependencies {
+    implementation(name: 'unityLibrary', ext: 'aar')
+}
