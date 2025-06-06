@@ -1,4 +1,4 @@
-# プロジェクト名（例: Unity Android App）
+# Android App Developement Experiment for IEE
 
 ## 📱 プロジェクト概要
 このプロジェクトは Unity を使用して開発された Android アプリケーションです。  
