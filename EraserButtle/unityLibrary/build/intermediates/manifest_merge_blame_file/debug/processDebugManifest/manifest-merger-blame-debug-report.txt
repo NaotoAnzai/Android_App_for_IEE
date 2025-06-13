@@ -5,85 +5,85 @@
 5
 6    <uses-sdk android:minSdkVersion="24" /> <!-- package="com.unity3d.player" -->
 7    <uses-feature android:glEsVersion="0x00030000" />
-7-->D:\Public\ANDROID\EraserButtle4\unityLibrary\src\main\AndroidManifest.xml:3:3-52
-7-->D:\Public\ANDROID\EraserButtle4\unityLibrary\src\main\AndroidManifest.xml:3:17-49
+7-->C:\android_app2\Android_App_for_IEE\EraserButtle\unityLibrary\src\main\AndroidManifest.xml:3:3-52
+7-->C:\android_app2\Android_App_for_IEE\EraserButtle\unityLibrary\src\main\AndroidManifest.xml:3:17-49
 8    <uses-feature
-8-->D:\Public\ANDROID\EraserButtle4\unityLibrary\src\main\AndroidManifest.xml:4:3-91
+8-->C:\android_app2\Android_App_for_IEE\EraserButtle\unityLibrary\src\main\AndroidManifest.xml:4:3-91
 9        android:name="android.hardware.vulkan.version"
-9-->D:\Public\ANDROID\EraserButtle4\unityLibrary\src\main\AndroidManifest.xml:4:17-63
+9-->C:\android_app2\Android_App_for_IEE\EraserButtle\unityLibrary\src\main\AndroidManifest.xml:4:17-63
 10        android:required="false" />
-10-->D:\Public\ANDROID\EraserButtle4\unityLibrary\src\main\AndroidManifest.xml:4:64-88
+10-->C:\android_app2\Android_App_for_IEE\EraserButtle\unityLibrary\src\main\AndroidManifest.xml:4:64-88
 11    <uses-feature
-11-->D:\Public\ANDROID\EraserButtle4\unityLibrary\src\main\AndroidManifest.xml:5:3-88
+11-->C:\android_app2\Android_App_for_IEE\EraserButtle\unityLibrary\src\main\AndroidManifest.xml:5:3-88
 12        android:name="android.hardware.touchscreen"
-12-->D:\Public\ANDROID\EraserButtle4\unityLibrary\src\main\AndroidManifest.xml:5:17-60
+12-->C:\android_app2\Android_App_for_IEE\EraserButtle\unityLibrary\src\main\AndroidManifest.xml:5:17-60
 13        android:required="false" />
-13-->D:\Public\ANDROID\EraserButtle4\unityLibrary\src\main\AndroidManifest.xml:5:61-85
+13-->C:\android_app2\Android_App_for_IEE\EraserButtle\unityLibrary\src\main\AndroidManifest.xml:5:61-85
 14
 15    <application android:extractNativeLibs="true" >
-15-->D:\Public\ANDROID\EraserButtle4\unityLibrary\src\main\AndroidManifest.xml:6:3-16:17
-15-->D:\Public\ANDROID\EraserButtle4\unityLibrary\src\main\AndroidManifest.xml:6:16-48
+15-->C:\android_app2\Android_App_for_IEE\EraserButtle\unityLibrary\src\main\AndroidManifest.xml:6:3-16:17
+15-->C:\android_app2\Android_App_for_IEE\EraserButtle\unityLibrary\src\main\AndroidManifest.xml:6:16-48
 16        <meta-data
-16-->D:\Public\ANDROID\EraserButtle4\unityLibrary\src\main\AndroidManifest.xml:7:5-69
+16-->C:\android_app2\Android_App_for_IEE\EraserButtle\unityLibrary\src\main\AndroidManifest.xml:7:5-69
 17            android:name="unity.splash-mode"
-17-->D:\Public\ANDROID\EraserButtle4\unityLibrary\src\main\AndroidManifest.xml:7:16-48
+17-->C:\android_app2\Android_App_for_IEE\EraserButtle\unityLibrary\src\main\AndroidManifest.xml:7:16-48
 18            android:value="0" />
-18-->D:\Public\ANDROID\EraserButtle4\unityLibrary\src\main\AndroidManifest.xml:7:49-66
+18-->C:\android_app2\Android_App_for_IEE\EraserButtle\unityLibrary\src\main\AndroidManifest.xml:7:49-66
 19        <meta-data
-19-->D:\Public\ANDROID\EraserButtle4\unityLibrary\src\main\AndroidManifest.xml:8:5-74
+19-->C:\android_app2\Android_App_for_IEE\EraserButtle\unityLibrary\src\main\AndroidManifest.xml:8:5-74
 20            android:name="unity.splash-enable"
-20-->D:\Public\ANDROID\EraserButtle4\unityLibrary\src\main\AndroidManifest.xml:8:16-50
+20-->C:\android_app2\Android_App_for_IEE\EraserButtle\unityLibrary\src\main\AndroidManifest.xml:8:16-50
 21            android:value="True" />
-21-->D:\Public\ANDROID\EraserButtle4\unityLibrary\src\main\AndroidManifest.xml:8:51-71
+21-->C:\android_app2\Android_App_for_IEE\EraserButtle\unityLibrary\src\main\AndroidManifest.xml:8:51-71
 22        <meta-data
-22-->D:\Public\ANDROID\EraserButtle4\unityLibrary\src\main\AndroidManifest.xml:9:5-78
+22-->C:\android_app2\Android_App_for_IEE\EraserButtle\unityLibrary\src\main\AndroidManifest.xml:9:5-78
 23            android:name="unity.launch-fullscreen"
-23-->D:\Public\ANDROID\EraserButtle4\unityLibrary\src\main\AndroidManifest.xml:9:16-54
+23-->C:\android_app2\Android_App_for_IEE\EraserButtle\unityLibrary\src\main\AndroidManifest.xml:9:16-54
 24            android:value="True" />
-24-->D:\Public\ANDROID\EraserButtle4\unityLibrary\src\main\AndroidManifest.xml:9:55-75
+24-->C:\android_app2\Android_App_for_IEE\EraserButtle\unityLibrary\src\main\AndroidManifest.xml:9:55-75
 25        <meta-data
-25-->D:\Public\ANDROID\EraserButtle4\unityLibrary\src\main\AndroidManifest.xml:10:5-84
+25-->C:\android_app2\Android_App_for_IEE\EraserButtle\unityLibrary\src\main\AndroidManifest.xml:10:5-84
 26            android:name="unity.render-outside-safearea"
-26-->D:\Public\ANDROID\EraserButtle4\unityLibrary\src\main\AndroidManifest.xml:10:16-60
+26-->C:\android_app2\Android_App_for_IEE\EraserButtle\unityLibrary\src\main\AndroidManifest.xml:10:16-60
 27            android:value="True" />
-27-->D:\Public\ANDROID\EraserButtle4\unityLibrary\src\main\AndroidManifest.xml:10:61-81
+27-->C:\android_app2\Android_App_for_IEE\EraserButtle\unityLibrary\src\main\AndroidManifest.xml:10:61-81
 28        <meta-data
-28-->D:\Public\ANDROID\EraserButtle4\unityLibrary\src\main\AndroidManifest.xml:11:5-81
+28-->C:\android_app2\Android_App_for_IEE\EraserButtle\unityLibrary\src\main\AndroidManifest.xml:11:5-81
 29            android:name="notch.config"
-29-->D:\Public\ANDROID\EraserButtle4\unityLibrary\src\main\AndroidManifest.xml:11:16-43
+29-->C:\android_app2\Android_App_for_IEE\EraserButtle\unityLibrary\src\main\AndroidManifest.xml:11:16-43
 30            android:value="portrait|landscape" />
-30-->D:\Public\ANDROID\EraserButtle4\unityLibrary\src\main\AndroidManifest.xml:11:44-78
+30-->C:\android_app2\Android_App_for_IEE\EraserButtle\unityLibrary\src\main\AndroidManifest.xml:11:44-78
 31        <meta-data
-31-->D:\Public\ANDROID\EraserButtle4\unityLibrary\src\main\AndroidManifest.xml:12:5-84
+31-->C:\android_app2\Android_App_for_IEE\EraserButtle\unityLibrary\src\main\AndroidManifest.xml:12:5-84
 32            android:name="unity.auto-report-fully-drawn"
-32-->D:\Public\ANDROID\EraserButtle4\unityLibrary\src\main\AndroidManifest.xml:12:16-60
+32-->C:\android_app2\Android_App_for_IEE\EraserButtle\unityLibrary\src\main\AndroidManifest.xml:12:16-60
 33            android:value="true" />
-33-->D:\Public\ANDROID\EraserButtle4\unityLibrary\src\main\AndroidManifest.xml:12:61-81
+33-->C:\android_app2\Android_App_for_IEE\EraserButtle\unityLibrary\src\main\AndroidManifest.xml:12:61-81
 34
 35        <activity
-35-->D:\Public\ANDROID\EraserButtle4\unityLibrary\src\main\AndroidManifest.xml:13:5-15:16
+35-->C:\android_app2\Android_App_for_IEE\EraserButtle\unityLibrary\src\main\AndroidManifest.xml:13:5-15:16
 36            android:name="com.unity3d.player.UnityPlayerActivity"
-36-->D:\Public\ANDROID\EraserButtle4\unityLibrary\src\main\AndroidManifest.xml:13:15-68
+36-->C:\android_app2\Android_App_for_IEE\EraserButtle\unityLibrary\src\main\AndroidManifest.xml:13:15-68
 37            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale|layoutDirection|density"
-37-->D:\Public\ANDROID\EraserButtle4\unityLibrary\src\main\AndroidManifest.xml:13:180-361
+37-->C:\android_app2\Android_App_for_IEE\EraserButtle\unityLibrary\src\main\AndroidManifest.xml:13:180-361
 38            android:exported="true"
-38-->D:\Public\ANDROID\EraserButtle4\unityLibrary\src\main\AndroidManifest.xml:13:433-456
+38-->C:\android_app2\Android_App_for_IEE\EraserButtle\unityLibrary\src\main\AndroidManifest.xml:13:433-456
 39            android:hardwareAccelerated="false"
-39-->D:\Public\ANDROID\EraserButtle4\unityLibrary\src\main\AndroidManifest.xml:13:397-432
+39-->C:\android_app2\Android_App_for_IEE\EraserButtle\unityLibrary\src\main\AndroidManifest.xml:13:397-432
 40            android:launchMode="singleTask"
-40-->D:\Public\ANDROID\EraserButtle4\unityLibrary\src\main\AndroidManifest.xml:13:148-179
+40-->C:\android_app2\Android_App_for_IEE\EraserButtle\unityLibrary\src\main\AndroidManifest.xml:13:148-179
 41            android:resizeableActivity="false"
-41-->D:\Public\ANDROID\EraserButtle4\unityLibrary\src\main\AndroidManifest.xml:13:362-396
+41-->C:\android_app2\Android_App_for_IEE\EraserButtle\unityLibrary\src\main\AndroidManifest.xml:13:362-396
 42            android:screenOrientation="fullUser"
-42-->D:\Public\ANDROID\EraserButtle4\unityLibrary\src\main\AndroidManifest.xml:13:111-147
+42-->C:\android_app2\Android_App_for_IEE\EraserButtle\unityLibrary\src\main\AndroidManifest.xml:13:111-147
 43            android:theme="@style/UnityThemeSelector" >
-43-->D:\Public\ANDROID\EraserButtle4\unityLibrary\src\main\AndroidManifest.xml:13:69-110
+43-->C:\android_app2\Android_App_for_IEE\EraserButtle\unityLibrary\src\main\AndroidManifest.xml:13:69-110
 44            <meta-data
-44-->D:\Public\ANDROID\EraserButtle4\unityLibrary\src\main\AndroidManifest.xml:14:7-82
+44-->C:\android_app2\Android_App_for_IEE\EraserButtle\unityLibrary\src\main\AndroidManifest.xml:14:7-82
 45                android:name="unityplayer.UnityActivity"
-45-->D:\Public\ANDROID\EraserButtle4\unityLibrary\src\main\AndroidManifest.xml:14:18-58
+45-->C:\android_app2\Android_App_for_IEE\EraserButtle\unityLibrary\src\main\AndroidManifest.xml:14:18-58
 46                android:value="true" />
-46-->D:\Public\ANDROID\EraserButtle4\unityLibrary\src\main\AndroidManifest.xml:14:59-79
+46-->C:\android_app2\Android_App_for_IEE\EraserButtle\unityLibrary\src\main\AndroidManifest.xml:14:59-79
 47        </activity>
 48    </application>
 49
