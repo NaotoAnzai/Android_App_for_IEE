@@ -11,6 +11,7 @@ import com.example.eraserbuttle.bridge.UnityBridge
 import com.example.eraserbuttle.ui.game.GameScreen
 import com.example.eraserbuttle.ui.result.ResultScreen
 import com.example.eraserbuttle.ui.start.StartScreen
+import com.example.eraserbuttle.ui.start.StartOption
 import com.unity3d.player.UnityPlayer
 
 @Composable
@@ -41,6 +42,10 @@ fun AppNavigation(unityPlayer: UnityPlayer?) {
         ) { backStackEntry ->
             val score = backStackEntry.arguments?.getInt("score") ?: 0
             ResultScreen(navController = navController, score = score)
+        }
+
+        composable(Screen.Option.route) {
+            OptionScreen(navController = navController)
         }
     }
 }

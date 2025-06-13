@@ -1,71 +1,137 @@
+// ファイルパス: ui/start/StartScreen.kt
 package com.example.eraserbuttle.ui.start
 
+import androidx.compose.foundation.Image
+import androidx.compose.foundation.background
+import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.*
 import androidx.compose.material3.Button
+import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Brush
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.res.painterResource // これをインポート
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
-import com.example.eraserbuttle.navigation.Screen // Screenクラスをインポート
+import com.example.eraserbuttle.R // Rクラス（リソースIDを解決するため）をインポート
+import com.example.eraserbuttle.navigation.Screen
 import com.example.eraserbuttle.ui.theme.EraserButtleTheme
 import androidx.compose.ui.platform.LocalContext
 
+import androidx.compose.ui.text.font.FontFamily
+import androidx.compose.ui.text.font.FontStyle
+import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.animation.core.*
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.remember
+import androidx.compose.ui.draw.alpha
+import androidx.compose.ui.graphics.SolidColor
+
 @Composable
 fun StartScreen(navController: NavController) {
-    // 画面全体を占めるBoxコンテナ
     Box(
         modifier = Modifier.fillMaxSize()
     ) {
-        // 全体の配置を制御するColumn
-        Column(
+        // ★★★ ここを修正 ★★★
+        // res/drawable/bunbougu_keshigomu.png を背景画像として使用
+        Image(
+            painter = painterResource(id = R.drawable.bunbougu_keshigomu), // ★R.drawable.bunbougu_keshigomu に変更★
+            contentDescription = "Background Image",
             modifier = Modifier.fillMaxSize(),
-            horizontalAlignment = Alignment.CenterHorizontally, // 横方向の中央揃え
-            verticalArrangement = Arrangement.SpaceBetween // 要素を上下に均等配置
-        ) {
-            // 1. ゲームタイトル（上部中央）
-            // Spacerで上部に少し余白を作るか、paddingで直接指定
-            Spacer(modifier = Modifier.height(64.dp)) // 上部の余白
-            Text(
-                text = "EraserButtle",
-                fontSize = 48.sp,
-                // Modifierをつけず、ColumnのhorizontalAlignmentで中央寄せされる
-            )
-            Spacer(modifier = Modifier.weight(1f)) // タイトルと開始ボタンの間にスペースを柔軟に確保
+            contentScale = ContentScale.Crop // 画面に合わせて画像をトリミングして表示
+        )
 
-            // 2. ゲーム開始ボタン（真ん中）
+        // 背景にオーバーレイする半透明のグラデーション
+        Box(
+            modifier = Modifier
+                .fillMaxSize()
+                .background(
+                    Brush.verticalGradient(
+                        colors = listOf(Color.Black.copy(alpha = 0.3f), Color.Black.copy(alpha = 0.7f))
+                    )
+                )
+        )
+
+        val alphaAnimation by animateFloatAsState(
+            targetValue = 1f,
+            animationSpec = tween(
+                durationMillis = 2000,
+                easing = LinearEasing
+            ), label = "alphaAnimation"
+        )
+
+        Column(
+            modifier = Modifier
+                .fillMaxSize()
+                .padding(16.dp)
+                .alpha(alphaAnimation),
+            horizontalAlignment = Alignment.CenterHorizontally,
+            verticalArrangement = Arrangement.SpaceAround
+        ) {
+            Text(
+                text = "ERASER BUTTLE",
+                fontSize = 56.sp,
+                color = Color.White,
+                fontWeight = FontWeight.Black,
+                fontStyle = FontStyle.Italic,
+                fontFamily = FontFamily.Serif,
+                modifier = Modifier
+                    .padding(top = 80.dp, bottom = 40.dp)
+                    .border(2.dp, Color.White.copy(alpha = 0.5f))
+                    .padding(horizontal = 24.dp, vertical = 12.dp)
+            )
+
             Button(
                 onClick = { navController.navigate(Screen.Game.route) },
-                modifier = Modifier.width(250.dp).height(60.dp) // ボタンのサイズを調整
+                modifier = Modifier
+                    .width(300.dp)
+                    .height(70.dp)
+                    .padding(vertical = 8.dp),
+                colors = ButtonDefaults.buttonColors(
+                    containerColor = Color(0xFFE57373).copy(alpha = 0.8f),
+                    contentColor = Color.White
+                ),
+                elevation = ButtonDefaults.buttonElevation(
+                    defaultElevation = 8.dp,
+                    pressedElevation = 2.dp
+                )
             ) {
-                Text(text = "ゲームスタート", fontSize = 24.sp)
+                Text(text = "ゲームスタート", fontSize = 28.sp, fontWeight = FontWeight.Bold)
             }
 
-            Spacer(modifier = Modifier.weight(1f)) // 開始ボタンとオプションボタンの間にスペースを柔軟に確保
-
-            // 3. オプションボタン（一番下）
             Button(
-                onClick = { /* TODO: オプション画面への遷移処理を記述 */ },
-                modifier = Modifier.width(200.dp).height(50.dp) // ボタンのサイズを調整
+                onClick = { navController.navigate(Screen.Option.route)/* TODO: オプション画面への遷移処理を記述 */ },
+                modifier = Modifier
+                    .width(250.dp)
+                    .height(60.dp)
+                    .padding(vertical = 8.dp),
+                colors = ButtonDefaults.buttonColors(
+                    containerColor = Color(0xFF64B5F6).copy(alpha = 0.8f),
+                    contentColor = Color.White
+                ),
+                elevation = ButtonDefaults.buttonElevation(
+                    defaultElevation = 8.dp,
+                    pressedElevation = 2.dp
+                )
             ) {
-                Text(text = "オプション", fontSize = 20.sp)
+                Text(text = "オプション", fontSize = 22.sp, fontWeight = FontWeight.Bold)
             }
-            Spacer(modifier = Modifier.height(32.dp)) // 下部の余白
+
+            Spacer(modifier = Modifier.height(32.dp))
         }
     }
 }
 
-/**
- * StartScreenのプレビュー表示
- */
 @Preview(showBackground = true)
 @Composable
 fun StartScreenPreview() {
     EraserButtleTheme {
-        // プレビュー用に、仮のNavControllerを渡してUIの見た目を確認する
         StartScreen(
             navController = NavController(LocalContext.current)
         )
