@@ -1,5 +1,6 @@
 -- Merging decision tree log ---
 manifest
+<<<<<<< HEAD
 ADDED from C:\android_app2\Android_App_for_IEE\EraserButtle\unityLibrary\src\main\AndroidManifest.xml:2:1-17:12
 INJECTED from C:\android_app2\Android_App_for_IEE\EraserButtle\unityLibrary\src\main\AndroidManifest.xml:2:1-17:12
 	package
@@ -96,3 +97,101 @@ INJECTED from C:\android_app2\Android_App_for_IEE\EraserButtle\unityLibrary\src\
 		INJECTED from C:\android_app2\Android_App_for_IEE\EraserButtle\unityLibrary\src\main\AndroidManifest.xml
 	android:minSdkVersion
 		INJECTED from C:\android_app2\Android_App_for_IEE\EraserButtle\unityLibrary\src\main\AndroidManifest.xml
+=======
+ADDED from C:\api5i\Android_App_for_IEE\EraserButtle\unityLibrary\src\main\AndroidManifest.xml:2:1-17:12
+INJECTED from C:\api5i\Android_App_for_IEE\EraserButtle\unityLibrary\src\main\AndroidManifest.xml:2:1-17:12
+	package
+		INJECTED from C:\api5i\Android_App_for_IEE\EraserButtle\unityLibrary\src\main\AndroidManifest.xml
+	xmlns:tools
+		ADDED from C:\api5i\Android_App_for_IEE\EraserButtle\unityLibrary\src\main\AndroidManifest.xml:2:70-116
+	xmlns:android
+		ADDED from C:\api5i\Android_App_for_IEE\EraserButtle\unityLibrary\src\main\AndroidManifest.xml:2:11-69
+uses-feature#0x00030000
+ADDED from C:\api5i\Android_App_for_IEE\EraserButtle\unityLibrary\src\main\AndroidManifest.xml:3:3-52
+	android:glEsVersion
+		ADDED from C:\api5i\Android_App_for_IEE\EraserButtle\unityLibrary\src\main\AndroidManifest.xml:3:17-49
+uses-feature#android.hardware.vulkan.version
+ADDED from C:\api5i\Android_App_for_IEE\EraserButtle\unityLibrary\src\main\AndroidManifest.xml:4:3-91
+	android:required
+		ADDED from C:\api5i\Android_App_for_IEE\EraserButtle\unityLibrary\src\main\AndroidManifest.xml:4:64-88
+	android:name
+		ADDED from C:\api5i\Android_App_for_IEE\EraserButtle\unityLibrary\src\main\AndroidManifest.xml:4:17-63
+uses-feature#android.hardware.touchscreen
+ADDED from C:\api5i\Android_App_for_IEE\EraserButtle\unityLibrary\src\main\AndroidManifest.xml:5:3-88
+	android:required
+		ADDED from C:\api5i\Android_App_for_IEE\EraserButtle\unityLibrary\src\main\AndroidManifest.xml:5:61-85
+	android:name
+		ADDED from C:\api5i\Android_App_for_IEE\EraserButtle\unityLibrary\src\main\AndroidManifest.xml:5:17-60
+application
+ADDED from C:\api5i\Android_App_for_IEE\EraserButtle\unityLibrary\src\main\AndroidManifest.xml:6:3-16:17
+	android:extractNativeLibs
+		ADDED from C:\api5i\Android_App_for_IEE\EraserButtle\unityLibrary\src\main\AndroidManifest.xml:6:16-48
+meta-data#unity.splash-mode
+ADDED from C:\api5i\Android_App_for_IEE\EraserButtle\unityLibrary\src\main\AndroidManifest.xml:7:5-69
+	android:value
+		ADDED from C:\api5i\Android_App_for_IEE\EraserButtle\unityLibrary\src\main\AndroidManifest.xml:7:49-66
+	android:name
+		ADDED from C:\api5i\Android_App_for_IEE\EraserButtle\unityLibrary\src\main\AndroidManifest.xml:7:16-48
+meta-data#unity.splash-enable
+ADDED from C:\api5i\Android_App_for_IEE\EraserButtle\unityLibrary\src\main\AndroidManifest.xml:8:5-74
+	android:value
+		ADDED from C:\api5i\Android_App_for_IEE\EraserButtle\unityLibrary\src\main\AndroidManifest.xml:8:51-71
+	android:name
+		ADDED from C:\api5i\Android_App_for_IEE\EraserButtle\unityLibrary\src\main\AndroidManifest.xml:8:16-50
+meta-data#unity.launch-fullscreen
+ADDED from C:\api5i\Android_App_for_IEE\EraserButtle\unityLibrary\src\main\AndroidManifest.xml:9:5-78
+	android:value
+		ADDED from C:\api5i\Android_App_for_IEE\EraserButtle\unityLibrary\src\main\AndroidManifest.xml:9:55-75
+	android:name
+		ADDED from C:\api5i\Android_App_for_IEE\EraserButtle\unityLibrary\src\main\AndroidManifest.xml:9:16-54
+meta-data#unity.render-outside-safearea
+ADDED from C:\api5i\Android_App_for_IEE\EraserButtle\unityLibrary\src\main\AndroidManifest.xml:10:5-84
+	android:value
+		ADDED from C:\api5i\Android_App_for_IEE\EraserButtle\unityLibrary\src\main\AndroidManifest.xml:10:61-81
+	android:name
+		ADDED from C:\api5i\Android_App_for_IEE\EraserButtle\unityLibrary\src\main\AndroidManifest.xml:10:16-60
+meta-data#notch.config
+ADDED from C:\api5i\Android_App_for_IEE\EraserButtle\unityLibrary\src\main\AndroidManifest.xml:11:5-81
+	android:value
+		ADDED from C:\api5i\Android_App_for_IEE\EraserButtle\unityLibrary\src\main\AndroidManifest.xml:11:44-78
+	android:name
+		ADDED from C:\api5i\Android_App_for_IEE\EraserButtle\unityLibrary\src\main\AndroidManifest.xml:11:16-43
+meta-data#unity.auto-report-fully-drawn
+ADDED from C:\api5i\Android_App_for_IEE\EraserButtle\unityLibrary\src\main\AndroidManifest.xml:12:5-84
+	android:value
+		ADDED from C:\api5i\Android_App_for_IEE\EraserButtle\unityLibrary\src\main\AndroidManifest.xml:12:61-81
+	android:name
+		ADDED from C:\api5i\Android_App_for_IEE\EraserButtle\unityLibrary\src\main\AndroidManifest.xml:12:16-60
+activity#com.unity3d.player.UnityPlayerActivity
+ADDED from C:\api5i\Android_App_for_IEE\EraserButtle\unityLibrary\src\main\AndroidManifest.xml:13:5-15:16
+	android:screenOrientation
+		ADDED from C:\api5i\Android_App_for_IEE\EraserButtle\unityLibrary\src\main\AndroidManifest.xml:13:111-147
+	android:launchMode
+		ADDED from C:\api5i\Android_App_for_IEE\EraserButtle\unityLibrary\src\main\AndroidManifest.xml:13:148-179
+	android:hardwareAccelerated
+		ADDED from C:\api5i\Android_App_for_IEE\EraserButtle\unityLibrary\src\main\AndroidManifest.xml:13:397-432
+	android:exported
+		ADDED from C:\api5i\Android_App_for_IEE\EraserButtle\unityLibrary\src\main\AndroidManifest.xml:13:433-456
+	android:resizeableActivity
+		ADDED from C:\api5i\Android_App_for_IEE\EraserButtle\unityLibrary\src\main\AndroidManifest.xml:13:362-396
+	android:configChanges
+		ADDED from C:\api5i\Android_App_for_IEE\EraserButtle\unityLibrary\src\main\AndroidManifest.xml:13:180-361
+	android:theme
+		ADDED from C:\api5i\Android_App_for_IEE\EraserButtle\unityLibrary\src\main\AndroidManifest.xml:13:69-110
+	android:name
+		ADDED from C:\api5i\Android_App_for_IEE\EraserButtle\unityLibrary\src\main\AndroidManifest.xml:13:15-68
+meta-data#unityplayer.UnityActivity
+ADDED from C:\api5i\Android_App_for_IEE\EraserButtle\unityLibrary\src\main\AndroidManifest.xml:14:7-82
+	android:value
+		ADDED from C:\api5i\Android_App_for_IEE\EraserButtle\unityLibrary\src\main\AndroidManifest.xml:14:59-79
+	android:name
+		ADDED from C:\api5i\Android_App_for_IEE\EraserButtle\unityLibrary\src\main\AndroidManifest.xml:14:18-58
+uses-sdk
+INJECTED from C:\api5i\Android_App_for_IEE\EraserButtle\unityLibrary\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\api5i\Android_App_for_IEE\EraserButtle\unityLibrary\src\main\AndroidManifest.xml
+INJECTED from C:\api5i\Android_App_for_IEE\EraserButtle\unityLibrary\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from C:\api5i\Android_App_for_IEE\EraserButtle\unityLibrary\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\api5i\Android_App_for_IEE\EraserButtle\unityLibrary\src\main\AndroidManifest.xml
+>>>>>>> 46abf5a12eddbf36e1dcfd681f974bcdf406cdc1
