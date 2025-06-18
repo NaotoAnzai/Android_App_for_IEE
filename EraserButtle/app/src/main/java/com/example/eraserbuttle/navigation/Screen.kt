@@ -8,4 +8,5 @@ sealed class Screen(val route: String) {
     object Result : Screen("result_screen/{score}") {
         fun createRoute(score: Int) = "result_screen/$score"
     }
+    object Option : Screen("option_screen")
 }

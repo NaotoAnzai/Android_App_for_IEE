@@ -1,40 +1,51 @@
-// ファイルパス: ui/result/ResultScreen.kt
 package com.example.eraserbuttle.ui.result
 
-import androidx.compose.material3.Text
+import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.*
+import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.unit.dp
+import androidx.compose.ui.platform.LocalContext
 import androidx.navigation.NavController
-// hand added by unsigned note S
-import androidx.compose.ui.tooling.preview.Preview // ← Previewのために追加
-import androidx.compose.ui.platform.LocalContext // ← プレビューのために追加
-import com.example.eraserbuttle.ui.theme.EraserButtleTheme // ← Themeのために追加
-// hand added by unsigned note F
+import androidx.navigation.compose.rememberNavController
+import com.example.eraserbuttle.ui.theme.EraserButtleTheme
+import com.example.eraserbuttle.navigation.Screen
 
 @Composable
 fun ResultScreen(navController: NavController, score: Int) {
-    // TODO: リザルト画面担当がここにUIを実装します。
-    // とりあえず今はボタンだけ仮置きします。
-    com.example.eraserbuttle.ui.shared.PlaceholderScreen(
-        screenName = "リザルト画面 (スコア: $score)",
-        buttonText = "スタートに戻る",
-        onClick = {
-            navController.navigate(com.example.eraserbuttle.navigation.Screen.Start.route) {
-                popUpTo(com.example.eraserbuttle.navigation.Screen.Start.route) { inclusive = true }
+    Box(
+        modifier = Modifier
+            .fillMaxSize()
+            .background(Color(0xFFB3E5FC)), // ← 水色（Material Light Blue 100）
+        contentAlignment = Alignment.Center
+    ) {
+        Column(horizontalAlignment = Alignment.CenterHorizontally) {
+            Text(
+                text = "スコア: $score",
+                style = MaterialTheme.typography.headlineMedium
+            )
+            Spacer(modifier = Modifier.height(24.dp))
+            Button(onClick = {
+                navController.navigate(Screen.Start.route) {
+                    popUpTo(Screen.Start.route) { inclusive = true }
+                }
+            }) {
+                Text("スタートに戻る")
             }
         }
-    )
+    }
 }
 
-/**
- * ResultScreenのプレビュー表示
- */
 @Preview(showBackground = true)
 @Composable
 fun ResultScreenPreview() {
     EraserButtleTheme {
-        // プレビュー用に、仮のNavControllerとscoreを渡してUIの見た目を確認する
         ResultScreen(
-            navController = NavController(LocalContext.current),
+            navController = rememberNavController(),
             score = 99800
         )
     }
