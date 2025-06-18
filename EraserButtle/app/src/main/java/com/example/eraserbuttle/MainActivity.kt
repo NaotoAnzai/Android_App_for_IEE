@@ -1,6 +1,7 @@
 // ファイルパス: MainActivity.kt
 package com.example.eraserbuttle
 
+import android.content.res.Configuration
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -36,4 +37,32 @@ class MainActivity : ComponentActivity() {
 
     // TODO: ゲーム担当者がここにUnityのライフサイクル管理のコードを実装します
     // (onResume, onPause, onDestroy,など)
+
+    override fun onResume() {
+        super.onResume()
+        // アプリが前面に戻ってきたら、Unityも再開する
+        unityPlayer?.resume()
+    }
+
+    override fun onPause() {
+        super.onPause()
+        // アプリがバックグラウンドに回ったら、Unityも一時停止する
+        unityPlayer?.pause()
+    }
+
+    override fun onDestroy() {
+        // Activityが破棄されるときに、Unityも終了処理を行う
+        unityPlayer?.quit()
+        super.onDestroy()
+    }
+
+    override fun onWindowFocusChanged(hasFocus: Boolean) {
+        super.onWindowFocusChanged(hasFocus)
+        unityPlayer?.windowFocusChanged(hasFocus)
+    }
+
+    override fun onConfigurationChanged(newConfig: Configuration) {
+        super.onConfigurationChanged(newConfig)
+        unityPlayer?.configurationChanged(newConfig)
+    }
 }

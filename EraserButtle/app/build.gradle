@@ -37,6 +37,13 @@ android {
     buildFeatures {
         compose true
     }
+    // hand added by unsigned note S
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['../unityLibrary/src/main/jniLibs']
+        }
+    }
+    // hand added by unsigned note F
 }
 
 dependencies {
